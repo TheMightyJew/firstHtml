@@ -1,94 +1,121 @@
 <html>
-  <head>
-    personal site  
-    </head>
-    <body>
-    <div id="menu">
-    <li><a href="#about">About Me</a></li>
-    <li><a href="#photos">My Photos</a></li>
-    <li><a href="#playlist">My Playlist</a></li>
-    <li><a href="#like">Like</a></li>
-    <li><a href="#qrcoder">QR code</a></li>
-    <li><a href="#spa">Q&amp;A</a></li>
-    <li><a href="#contact">Contact Me</a></li>
-    </div>
-              
-    <section id="about" class="section">
-    <h1> about me</h1>
-    My name is Steven Danishevski. I'm 20 years old , originally  from Ashdod .<br>
-    I am a student in the ISE department of BGU , currently in "Atuda" military program. I will join the army at the summer of 2020.<br>
-    My favorite habits are football and theater and offcourse hang out with my friends.<br>
-    So far i found a lot of interest at the subjects i learned in the different courses , epicially about the BI, Ai and search algorithms.<br>
-    I expect from the course "Development environments in the Internet" to expose me to new information and tools that i will found useful in the future , both in the industry and the 2nd degree.<br>
 
-    <br>
-    <br>
-    <br>
-    </section>
-    
-    <section id="photos" class="section">
-    <h1>my photos</h1>
-    <img src=1.png width=250 height=300 />
+<head>
+  <link rel="stylesheet" type="text/css" href="styleSheet.css" />
+
+  <div id="start">
+    <center>
+      <a href="/" id="logo">Steven's Site</a>
+    </center>
+  </div>
+
+  <div id="header">
+
+    <ul id="menu">
+      <li><a class="myHeader" href="#about">About Me</a></li>
+      <li><a class="myHeader" href="#photos">My Photos</a></li>
+      <li><a class="myHeader" href="#playlist">My Playlist</a></li>
+      <li><a class="myHeader" href="#like">Like</a></li>
+      <li><a class="myHeader" href="#qrcoder">QR code</a></li>
+      <li><a class="myHeader" href="#spa">Q&amp;A</a></li>
+      <li><a class="myHeader" href="#contact">Contact Me</a></li>
+    </ul>
+  </div>
+
+  <script type="text/javascript">
+    $(function () {
+      $("#nav a").click(function (e) {
+        e.preventDefault();
+        $('html,head').scrollTo(this.hash, this.hash);
+      });
+    });
+    $(document).scroll(function () {
+      $('#header').toggle($(this).scrollTop() > 1000)
+    });​
+  </script>
+</head>
+
+<body>
+
+  <div id="top" class="myHeader">
+    <a class="myHeader" href="#start">top</a>
+  </div>
+
+  <section id="about" class="section">
+    <h1 class="myHeader">About Me:</h1>
+    My name is Steven Danishevski. I'm 20 years old , originally from Ashdod .<br>
+    I am a student in the ISE department of BGU , currently in "Atuda" military program. I will join the army at the
+    summer of 2020.<br>
+    My favorite habits are football and theater and offcourse hang out with my friends.<br>
+    So far i found a lot of interest at the subjects i learned in the different courses , epicially about the BI, Ai and
+    search algorithms.<br>
+    I expect from the course "Development environments in the Internet" to expose me to new information and tools that i
+    will found useful in the future , both in the industry and the 2nd degree.<br>
+  </section>
+
+  <section id="photos" class="section">
+    <h1 class="myHeader">My Photos:</h1>
+    <img src=1.png width=270 height=300 />
     <img src=2.jpg width=500 height=300 />
     <img src=3.jpg width=450 height=300 />
-    <br>
-    <br>
-    <br>
-    </section>
-    
-    <section id="playlist" class="section">
-    <h1>my playlist</h1>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLx0sYbCqOb8TBPRdmBHs5Iftvv9TPboYG" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
-    <br>
-    <br>
-    <br>
-    </section>
-    
-    <section id="like" class="section">
-    <h1>give me a like</h1>
-    <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fsteven.danishevski&width=50&layout=standard&action=like&size=small&show_faces=true&share=true&height=80&appId" width="50" height="80" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-    <br>
-    <br>
-    <br>
-    </section>
-    
-    <section id="qrcoder" class="section">
-    <h1>scan my code</h1>
-    <br>
-    <br>
-    <br>
-    </section>
-    
-    <section id="spa" class="section">
-    <h1>Q&A</h1>
+  </section>
+
+  <section id="playlist" class="section">
+    <h1 class="myHeader">My Playlist:</h1>
+    <iframe width="560" height="315"
+      src="https://www.youtube.com/embed/videoseries?list=PLx0sYbCqOb8TBPRdmBHs5Iftvv9TPboYG" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </section>
+
+  <section id="like" class="section">
+    <h1 class="myHeader">Give me a like :)</h1>
+    <iframe
+      src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fthemightyjew.github.io%2FfirstHtml%2F&width=132&layout=button_count&action=like&size=large&show_faces=true&share=true&height=46&appId"
+      width="132" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+      allowTransparency="true" allow="encrypted-media"></iframe>
+  </section>
+
+  <section id="qrcoder" class="section">
+    <h1 class="myHeader">Scan My Code:</h1>
+    <img src=code.png width=300 height=300 />
+  </section>
+
+  <section id="spa" class="section">
+    <h1 class="myHeader">Q&A:</h1>
     1)
     <br>
     2)
-    <br>
-    <br>
-    <br>
-    </section>
-    
-    <section id="contact" class="section">
-    <h1>contact me</h1>   
-    <br>
-    <br>
-    <br>
-    </section>
-    
-    
-    <script type="text/javascript">
-    $(function(){
-      $("#nav a").click(function(e){
-        e.preventDefault();
-        $('html,body').scrollTo(this.hash,this.hash); 
-      });
-    });
-    </script>
-    <script type="text/javascript">
-     $(document).scroll(function() {
-        $('#menu').toggle($(this).scrollTop()>1000)
-     });&#8203;
-     </script>
-    
-    </body></html>
+  </section>
+
+  <section id="contact" class="section">
+    <h1 class="myHeader">Contact Me:</h1>
+    <form method="POST" action="/cgi-bin/formmail">
+
+      <input type="hidden" name="recipient" value="deitel@deitel.com">
+      <input type="hidden" name="subject" value="Feedback Form">
+      <input type="hidden" name="redirect" value="main.html">
+
+      <p><strong>Name: </strong>
+        <input name="name" type="text" size="25" required>
+      </p>
+
+      <p><strong>Email:</strong>
+        <input name="Email" type="mail" size="25" required>
+      </p>
+
+      <p><strong>Message:</strong>
+        <br>
+        <br>
+        <textarea name="comments" rows="6" cols="50" required></textarea>
+      </p>
+
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </form>
+
+  </section>
+
+
+</body>
+
+</html>
