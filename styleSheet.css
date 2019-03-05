@@ -128,3 +128,9 @@ section{
 #top.myHeader{
   width: 80px;
 }
+ol
+{
+   text-align: left;
+   margin-left: auto;
+   margin-right: auto;
+}
