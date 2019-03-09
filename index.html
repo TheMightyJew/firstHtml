@@ -2,7 +2,9 @@
 
 <head>
   <link rel="stylesheet" type="text/css" href="styleSheet.css" />
+</head>
 
+<body>
   <div id="start">
     <center>
       <a href="/" id="logo">Steven's Site</a>
@@ -22,47 +24,45 @@
     </ul>
   </div>
 
-  <script type="text/javascript">
-    $(function () {
-      $("#nav a").click(function (e) {
-        e.preventDefault();
-        $('html,head').scrollTo(this.hash, this.hash);
-      });
-    });
-    $(document).scroll(function () {
-      $('#header').toggle($(this).scrollTop() > 1000)
-    });​
-  </script>
-</head>
-
-<body>
-
   <div id="top" class="myHeader">
     <a class="myHeader" href="#start">top</a>
   </div>
 
   <section id="about" class="section">
     <h1 class="myHeader">About Me:</h1>
-    My name is Steven Danishevski. I'm 20 years old , originally from Ashdod .<br>
-    I am a student in the ISE department of BGU , currently in "Atuda" military program. I will join the army at the
-    summer of 2020.<br>
-    My favorite habits are football and theater and offcourse hang out with my friends.<br>
-    So far i found a lot of interest at the subjects i learned in the different courses , epicially about the BI, Ai and
-    search algorithms.<br>
-    I expect from the course "Development environments in the Internet" to expose me to new information and tools that i
-    will found useful in the future , both in the industry and the 2nd degree.<br>
+    <table width=60% style='margin-left:25%'>
+      <tr>
+        <td>
+          <p style='vertical-align:middle;'>
+            <font size="+1"><b>Steven Danishevski</b></font> is my name. I'm 20 years old , originally from Ashdod .<br>
+            I am a student in the ISE department of BGU , currently in "Atuda" military program. I will join the army in the
+            summer of 2020.<br>
+            My favorite habits are football and theater and offcourse hang out with my friends.<br>
+            So far i have found a lot of interest at the subjects in the different courses , especially about the BI, AI and
+            advanced search algorithms.<br>
+            I expect from the course "Development environments in the Internet" to expose me to new information and tools that i
+            will find useful in the future , both in the industry and throughout the 2nd degree.<br>
+          </p>
+        </td>
+        <td style='padding-left: 5%'>
+          <img style='vertical-align:middle; border-radius: 100%;' src=profile.png width=200 height=289 />
+        </td>
+      </tr>
+    </table>
+
+
   </section>
 
   <section id="photos" class="section">
     <h1 class="myHeader">My Photos:</h1>
-    <img src=1.jpg width=500 height=300 />
-    <img src=2.png width=270 height=300 />
-    <img src=3.jpg width=450 height=300 />
+    <img src=friends.jpg width=36% />
+    <img src=gf.png width=19% />
+    <img src=family.png width=35% />
   </section>
 
   <section id="playlist" class="section">
     <h1 class="myHeader">My Playlist:</h1>
-    <iframe width="560" height="315"
+    <iframe width="50%" height="400"
       src="https://www.youtube.com/embed/videoseries?list=PLpRjkOHBe_TgmznCle__jWDhoV4aFgCjw" frameborder="0"
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </section>
@@ -77,25 +77,25 @@
 
   <section id="qrcoder" class="section">
     <h1 class="myHeader">Scan My Code:</h1>
-    <img src=code.png width=300 height=300 />
+    <img style='border-radius: 100%;' src=code.png width=300 height=300 />
   </section>
 
   <section id="spa" class="section" >
     <h1 class="myHeader">Q&A:</h1>
-    <p><strong>What is "Web1"?<br></strong>
+    <p><strong><font size="+1">What is "Web1.0"?</font><br></strong>
       It is the “readable” phrase of the World Wide Web with flat data. In Web 1.0, there is only limited interaction between sites and web users. Web 1.0 is simply an information portal where users passively receive information without being given the opportunity to post reviews, comments, and feedback.    </p>
-    <p><strong>What is "Web2"?<br></strong>
+    <p><strong><font size="+1">What is "Web2.0"?</font><br></strong>
       It is the “writable” phrase of the World Wide Web with interactive data. Unlike Web 1.0, Web 2.0 facilitates interaction between web users and sites, so it allows users to interact more freely with each other. Web 2.0 encourages participation, collaboration, and information sharing. Examples of Web 2.0 applications are Youtube, Wiki, Flickr, Facebook, and so on.    </p>
-    <p><strong>What is "Web3"?<br></strong>
+    <p><strong><font size="+1">What is "Web3.0"?</font><br></strong>
       It is the “executable” phrase of Word Wide Web with dynamic applications, interactive services, and “machine-to-machine” interaction. Web 3.0 is a semantic web which refers to the future. In Web 3.0, computers can interpret information like humans and intelligently generate and distribute useful content tailored to the needs of users. One example of Web 3.0 is Tivo, a digital video recorder. Its recording program can search the web and read what it finds to you based on your preferences.    </p>
-    <p><strong>3 Main differences Between the Webs generations:<br></strong>
+    <p><strong><font size="+1">Three main differences Between the "Web's" generations:</font><br></strong>
       <ol>
-         <li><b>Update Rate: </b>In Web1.0 the pages are updated seldom , in Web2.0 they are updated more frequently and in Web3.0 the pages are updated all the time.</li>
-         <li><b>Information Sharing: </b>Web1.0 was basicly readonly , it was used to recieve information. Web2.0 encourages participation, collaboration, and information sharing and Web3.0 searches whole(or part of it) the web for information.</li>
-         <li><b>Update Rate: </b></li>
+         <li><u><b>Update Rate</b></u>: In Web1.0 the pages are updated seldom , in Web2.0 they are updated more frequently and in Web3.0 the pages are updated all the time.</li>
+         <li><u><b>Information Sharing</b></u>: Web1.0 was basicly readonly , it was used to recieve information. Web2.0 encourages participation, collaboration, and information sharing and Web3.0 searches whole(or part of it) the web for information.</li>
+         <li><u><b>Update Rate</b></u>: </li>
        </ol>
     </p>
-    <p><strong>use case somthing:<br></strong>
+    <p><strong><font size="+1">Use case:</font><br></strong>
       lalala
     </p>
   </section>
@@ -124,7 +124,18 @@
 
   </section>
 
-
+  <script type="text/javascript">
+    $(function () {
+      $("#nav a").click(function (e) {
+        e.preventDefault();
+        $('html,head').scrollTo(this.hash, this.hash);
+      });
+    });
+    $(document).scroll(function () {
+      $('#header').toggle($(this).scrollTop() > 1000)
+    });​
+  </script>
+  
 </body>
 
 </html>
